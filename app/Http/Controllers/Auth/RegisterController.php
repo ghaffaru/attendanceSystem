@@ -71,7 +71,8 @@ class RegisterController extends Controller
                 return Redirect::back()->withErrors($validation)->withInput();
          }
 
-         $user = Sentinel::register($request->all() + ['QRpassword' => $request->email . $request->password]);
+         $qrPass = bcrypt($request->email . $request->password);
+         $user = Sentinel::register($request->all() + ['QRpassword' => $qrPass]);
         //Activate the user ** 
          $activation = Activation::create($user);
          $activation = Activation::complete($user, $activation->code);

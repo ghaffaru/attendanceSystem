@@ -12,7 +12,11 @@ Login
       </div>
     @endif 
     {{ Form::open(array('url' => route('login'), 'class' => 'form-horizontal form-signin','files' => true)) }}    
-        <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
+       
+        <h3 class="form-signin-heading">
+          @if (!session('message'))
+              Welcome Back! @endif Please Sign In
+        </h3>
         <hr class="colorgraph"><br>
         {!! csrf_field() !!}
         <div class="form-group {{ $errors->has('email') ? 'has-error' : ''}}">
