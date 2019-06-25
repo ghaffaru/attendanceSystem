@@ -6,13 +6,17 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Arrival' => $baseDir . '/app/Arrival.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\Departure' => $baseDir . '/app/Departure.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\ArrivalTimeController' => $baseDir . '/app/Http/Controllers/ArrivalTimeController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\DepartureTimeController' => $baseDir . '/app/Http/Controllers/DepartureTimeController.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\QrLoginController' => $baseDir . '/app/Http/Controllers/QrLoginController.php',
     'App\\Http\\Controllers\\RoleController' => $baseDir . '/app/Http/Controllers/RoleController.php',
@@ -157,6 +161,8 @@ return array(
     'Collective\\Html\\HtmlBuilder' => $vendorDir . '/laravelcollective/html/src/HtmlBuilder.php',
     'Collective\\Html\\HtmlFacade' => $vendorDir . '/laravelcollective/html/src/HtmlFacade.php',
     'Collective\\Html\\HtmlServiceProvider' => $vendorDir . '/laravelcollective/html/src/HtmlServiceProvider.php',
+    'CreateArrivalsTable' => $baseDir . '/database/migrations/2019_06_24_113740_create_arrivals_table.php',
+    'CreateDeparturesTable' => $baseDir . '/database/migrations/2019_06_24_113754_create_departures_table.php',
     'Cron\\AbstractField' => $vendorDir . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
     'Cron\\CronExpression' => $vendorDir . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
     'Cron\\DayOfMonthField' => $vendorDir . '/mtdowling/cron-expression/src/Cron/DayOfMonthField.php',

@@ -89,7 +89,7 @@
 			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
                     @if (!Sentinel::getUser())
-                        <li><a href="{{ url('qrLogin-option1') }}">Qr Login</a></li>
+                        {{-- <li><a href="{{ url('qrLogin-option1') }}">Qr Login</a></li> --}}
 						<li><a href="{{ url('login') }}">Login</a></li>
                         {{-- <li><a href="{{ url('qrLogin') }}">Qr Login</a></li> --}}
 						

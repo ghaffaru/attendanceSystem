@@ -15,6 +15,12 @@ Route::get('/', ['uses' => 'HomeController@home']);
 Route::get('qrLogin', ['uses' => 'QrLoginController@index']);
 Route::get('qrLogin-option1', ['uses' => 'QrLoginController@indexoption2']);
 Route::post('qrLogin', ['uses' => 'QrLoginController@checkUser']);
+Route::get('/arrival','ArrivalTimeController@index');
+
+Route::get('/arrival/{user}','ArrivalTimeController@store');
+
+Route::get('/departure','DepartureTimeController@index');
+Route::get('/departure/{user}','DepartureTimeController@store');
 
 
  Route::group(['middleware' => ['web', 'auth', 'permission'] ], function () {

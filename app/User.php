@@ -54,7 +54,15 @@ class User extends Model implements RoleableInterface, PermissibleInterface, Per
         'role',
         'QRpassword'
     ];
+    public function arrivals()
+    {
+        return $this->hasMany(Arrival::class);
+    }
 
+    public function departures()
+    {
+        return $this->hasMany(Departure::class);
+    }
     /**
      * {@inheritDoc}
      */

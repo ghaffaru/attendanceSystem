@@ -8,13 +8,13 @@
 
   <!-- menu profile quick info -->
   <div class="profile">
-    <div class="profile_pic">
+    {{-- <div class="profile_pic">
       <img src="{{ URL::asset('/images/img.jpg') }}" alt="..." class="img-circle profile_img">
-    </div>
-    <div class="profile_info">
+    </div> --}}
+    {{-- <div class="profile_info">
       <span>Welcome,</span>
       <h2>{{Sentinel::getUser()->first_name.' ' .Sentinel::getUser()->last_name }}</h2>
-    </div>
+    </div> --}}
   </div>
   <!-- /menu profile quick info -->
 
@@ -135,7 +135,7 @@
   <!-- /sidebar menu -->
 
   <!-- /menu footer buttons -->
-  <div class="sidebar-footer hidden-small">
+  {{-- <div class="sidebar-footer hidden-small">
     <a data-toggle="tooltip" data-placement="top" title="Settings">
       <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
     </a>
@@ -148,6 +148,6 @@
     <a data-toggle="tooltip" data-placement="top" title="Logout">
       <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
     </a>
-  </div>
+  </div> --}}
   <!-- /menu footer buttons -->
 </div>

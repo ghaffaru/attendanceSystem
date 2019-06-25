@@ -24,8 +24,8 @@ class QrLoginController extends Controller
 			if ($request->data) {
 				$user = User::where('QRpassword',$request->data)->first();
 				if ($user) {
-					Sentinel::authenticate($user);
-				    $result =1;
+				//	Sentinel::authenticate($user);
+				    $result = $user->id;
 				 }else{
 				 	$result =0;
 				 }
@@ -42,7 +42,7 @@ class QrLoginController extends Controller
 		if ($request->action = 'updateqr') {
 			$user = Sentinel::getUser();
 			if ($user) {
-				$qrLogin=bcrypt($user->personal_number.$user->email.str_random(40));
+				$qrLogin=bcrypt($user->email . $user->password);
 		        $user->QRpassword= $qrLogin;
 		        $user->update();
 		        $result=1;

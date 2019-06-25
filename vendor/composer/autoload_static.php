@@ -314,13 +314,17 @@ class ComposerStaticInit5e83379b4ec3462d786c2038d105535d
     );
 
     public static $classMap = array (
+        'App\\Arrival' => __DIR__ . '/../..' . '/app/Arrival.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Departure' => __DIR__ . '/../..' . '/app/Departure.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\ArrivalTimeController' => __DIR__ . '/../..' . '/app/Http/Controllers/ArrivalTimeController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\DepartureTimeController' => __DIR__ . '/../..' . '/app/Http/Controllers/DepartureTimeController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\QrLoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/QrLoginController.php',
         'App\\Http\\Controllers\\RoleController' => __DIR__ . '/../..' . '/app/Http/Controllers/RoleController.php',
@@ -465,6 +469,8 @@ class ComposerStaticInit5e83379b4ec3462d786c2038d105535d
         'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
         'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
         'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
+        'CreateArrivalsTable' => __DIR__ . '/../..' . '/database/migrations/2019_06_24_113740_create_arrivals_table.php',
+        'CreateDeparturesTable' => __DIR__ . '/../..' . '/database/migrations/2019_06_24_113754_create_departures_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/DayOfMonthField.php',
