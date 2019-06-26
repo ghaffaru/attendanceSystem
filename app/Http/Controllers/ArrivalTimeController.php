@@ -8,6 +8,10 @@ use Carbon\Carbon;
 class ArrivalTimeController extends Controller
 {
     //
+    public function __construct()
+    {
+        // $this->middleware('authMain')->only('store');
+    }
     public function index()
     {
         return view('arrival');

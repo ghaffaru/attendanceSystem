@@ -314,6 +314,8 @@ class ComposerStaticInit5e83379b4ec3462d786c2038d105535d
     );
 
     public static $classMap = array (
+        'AdminsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AdminsTableSeeder.php',
+        'App\\Admin' => __DIR__ . '/../..' . '/app/Admin.php',
         'App\\Arrival' => __DIR__ . '/../..' . '/app/Arrival.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Departure' => __DIR__ . '/../..' . '/app/Departure.php',
@@ -469,6 +471,7 @@ class ComposerStaticInit5e83379b4ec3462d786c2038d105535d
         'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
         'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
         'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
+        'CreateAdminsTable' => __DIR__ . '/../..' . '/database/migrations/2019_06_25_151058_create_admins_table.php',
         'CreateArrivalsTable' => __DIR__ . '/../..' . '/database/migrations/2019_06_24_113740_create_arrivals_table.php',
         'CreateDeparturesTable' => __DIR__ . '/../..' . '/database/migrations/2019_06_24_113754_create_departures_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',

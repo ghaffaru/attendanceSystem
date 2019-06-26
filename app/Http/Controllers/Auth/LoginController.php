@@ -6,7 +6,7 @@ use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
-
+use Illuminate\Support\Facades\Auth;
 use Cartalyst\Sentinel\Checkpoints\NotActivatedException;
 use Cartalyst\Sentinel\Checkpoints\ThrottlingException;
 use Sentinel;
@@ -50,16 +50,15 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+        $this->middleware('guest:admin')->except('logout');
+
     }
     public function showLoginForm()
     {
         return view('auth.login');
     }
-    
     protected function login(Request $request)
     {
-
-
         try {
 
             // Validation

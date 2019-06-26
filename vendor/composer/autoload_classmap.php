@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AdminsTableSeeder' => $baseDir . '/database/seeds/AdminsTableSeeder.php',
+    'App\\Admin' => $baseDir . '/app/Admin.php',
     'App\\Arrival' => $baseDir . '/app/Arrival.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Departure' => $baseDir . '/app/Departure.php',
@@ -161,6 +163,7 @@ return array(
     'Collective\\Html\\HtmlBuilder' => $vendorDir . '/laravelcollective/html/src/HtmlBuilder.php',
     'Collective\\Html\\HtmlFacade' => $vendorDir . '/laravelcollective/html/src/HtmlFacade.php',
     'Collective\\Html\\HtmlServiceProvider' => $vendorDir . '/laravelcollective/html/src/HtmlServiceProvider.php',
+    'CreateAdminsTable' => $baseDir . '/database/migrations/2019_06_25_151058_create_admins_table.php',
     'CreateArrivalsTable' => $baseDir . '/database/migrations/2019_06_24_113740_create_arrivals_table.php',
     'CreateDeparturesTable' => $baseDir . '/database/migrations/2019_06_24_113754_create_departures_table.php',
     'Cron\\AbstractField' => $vendorDir . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
