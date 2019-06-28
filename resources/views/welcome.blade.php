@@ -8,9 +8,9 @@ Home Page
     <style>
     .content {
             margin-top: 200px;
-        }
+    }
 
-        #signup-response{
+    #signup-response{
     width: 50%;
     margin-left: auto;
     margin-right: auto;

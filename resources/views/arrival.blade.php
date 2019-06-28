@@ -8,10 +8,43 @@ Arrival Login
 @stop
 @section('style')
 <link href=" {{ URL::asset('/qr_login/option2/css/style.css') }}" rel="stylesheet">
+<style>
+#signup-response{
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+background-color: red;
+margin-top: 20px;
+
+animation:signup-response 0.5s 1;
+-webkit-animation:signup-response 0.5s 1;
+animation-fill-mode: forwards;
+
+animation-delay:5s;
+-webkit-animation-delay:5s; /* Safari and Chrome */
+-webkit-animation-fill-mode: forwards;
+
+} 
+
+@keyframes signup-response{
+from {opacity :1;}
+to {opacity :0;}
+}
+
+@-webkit-keyframes signup-response{
+from {opacity :1;}
+to {opacity :0;}
+}
+</style>
 @stop
 @section('content')
 <div class="container" id="QR-Code">
-
+        @if (session('message'))
+            <div class="alert-danger" id="signup-response">
+                <h2>{{ session('message')}}</h2>
+            </div>
+        @endif
           @if(!Sentinel::getUser())
             <div class="col-md-4">
             </div>

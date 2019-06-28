@@ -15,7 +15,6 @@ View User Qr Code
 
 <!--   end qr code -->
 
-
 @stop
 
 @section('scripts')

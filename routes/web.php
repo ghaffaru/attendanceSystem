@@ -48,3 +48,7 @@ Route::get('/departure/{user}','DepartureTimeController@store');
  Route::post('/admin','AdminLoginController@login')->name('admins');
  Route::get('/admin/dashboard','AdminDashboardController@index')->name('admin.dashboard');
  Route::post('/admin/logout','AdminLoginController@logout')->name('admin.logout');
+ Route::get('/user-search','AdminDashboardController@userSearch');
+ Route::post('/user-search','AdminDashboardController@handleUserSearch');
+ Route::post('/sort-date','AdminDashboardController@sortDate');
+ Route::get('/qrcodes','AdminDashboardController@viewQrCodes');

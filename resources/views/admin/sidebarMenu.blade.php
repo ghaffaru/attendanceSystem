@@ -1,7 +1,7 @@
 
 <div class="left_col scroll-view">
   <div class="navbar nav_title" style="border: 0;">
-    <a href="{{url('dashboard')}}" class="site_title"><i class="fa fa-paw"></i> <span>Ghana Tech Lab</span></a>
+    <a href="{{url('/admin/dashboard')}}" class="site_title"><i class="fa fa-paw"></i> <span>Ghana Tech Lab</span></a>
   </div>
 
   <div class="clearfix"></div>
@@ -23,8 +23,12 @@
   <!-- sidebar menu -->
   <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
     <div class="menu_section">
-      <h3>General</h3>
+      <h3><a href="/admin/dashboard" style="text-decoration:none; color:white;">General</a></h3><br />
+      <h3><a href="/user-search" style="text-decoration:none; color:white;">User search</a></h3><br />
+      <h3><a href="/qrcodes" style="text-decoration:none; color:white;">View QrCodes</a></h3>
+
       <ul class="nav side-menu">
+        
       {{-- @if (Sentinel::getUser()->hasAnyAccess(['user.*']))
         <li><a><i class="fa fa-users"></i>Users <span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
